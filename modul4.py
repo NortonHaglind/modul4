@@ -15,7 +15,7 @@ else:
 
 while True:
     x1=str(input("vad heter du?: "))
-    if x1.isdigit(): 
+    if x1.isdigit(): #kollar om det inte är bokstäver
         print("skriv namn")
         continue
     else:
@@ -25,7 +25,7 @@ while True:
 
 while True:
     r=input("Skriv radie på cirkeln?: ")
-    if not r.isdigit():
+    if not r.isdigit(): #kollar om det inte är ett nummer
         print("skriv en riktig siffra")
         continue
     else:
@@ -49,7 +49,7 @@ while True:
         print("skriv rätt")
         continue
         
-    if op == "+":
+    if op == "+":                             #kollar om de skrev ett räknesätt
         print(int(nummer1) + int(nummer2))
         break
     elif op == "-":
@@ -62,7 +62,7 @@ while True:
         print(int(nummer1) * int(nummer2))
         break
     else:
-        print("försök igen")
+        print("försök igen")  #om inte får de skriva om 
         continue
 
 while True:
